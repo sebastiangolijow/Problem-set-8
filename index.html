@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My hobby</title>
+        <script> function greet()
+                 { let name= document.querySelector('#name').value;
+
+                      document.querySelector('#result').innerHTML= 'My' + ' ' + 'hobby' + ' ' + 'is' + ' ' + name;
+
+                 }
+        </script>
+        <script>
+            alert("Welcome!")
+        </script>
+    </head>
+    <h2> Hi! complete the form with your hobby and see what happend!</h2>
+    <h3 style="font-size:medium"> This is a hobby page! Here you can explore the internet and see what happend when you search about your favorite hobby!</h3>
+    <body style="color: black; background-image: url('hobby.JPEG');text-align:center;">
+        Submit your hobby!
+         <form onsubmit='greet(); return false;'>
+        <input type='text' id='name'> <input type='submit' style="text-align:center;">
+        </form>
+        <div class="alert alert-warning" role="alert">
+  Visit my next page to google your hobby!<a href="/page2.html"; class="alert-link">Click here!</a>.
+</div>
+       <div class="alert alert-info" role="alert">
+ Visit my next page to see some videos! <a href="/page3.html"; class="alert-link">Click here!</a>.
+</div>
+<div class="alert alert-light" role="alert">
+ Visit my next page to see some movies! <a href="/page4.html"; class="alert-link">Click here!</a>.
+</div>
+
+<div id='result' style="text-align:center; font-size:large; color:black;">
+        My hobby is
+</div>
+    </body>
+</html>
